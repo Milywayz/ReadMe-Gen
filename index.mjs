@@ -3,12 +3,27 @@ import fs from "fs/promises"
 
 
 
-let {description , license} = await  inquirer
+let {title , description , tableOfContents , installation , usage , license} = await  inquirer
 .prompt([
+  {
+    type: 'input',
+    name: 'title',
+    message: 'Write a title for your project',
+  },
   {
         type: 'input',
         name: 'description',
-        message: 'Write a description of your project',
+        message: 'Write a description for your project',
+      },
+      {
+        type: 'input',
+        name: 'installation',
+        message: 'Write about what installations is needed for your project',
+      },
+      {
+        type: 'input',
+        name: 'usage',
+        message: 'Write about what usages is needed for your project',
       },
       {
         type: 'list',
@@ -22,17 +37,24 @@ let {description , license} = await  inquirer
     ])
     
     
-      
-    
-let readmeText = `# Project Description
+
+
+let readmeTitle = `# Project Description
+${title}
+## Project Description
 ${description}
+## Table of Contents
+${tableOfContents}
+## Installation
+${installation}
 
 ${generateLicense(license)}
-  
 
+  
 `
 
-    fs.writeFile("README.md",readmeText)
+
+    fs.writeFile("README.md",readmeTitle)
   console.log(description)
 
 
