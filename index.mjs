@@ -3,7 +3,7 @@ import fs from "fs/promises"
 
 
 
-let {title , description , tableOfContents , installation , usage , credits , license} = await  inquirer
+let {title , description , installation , usage , credits , test , profile , email , license} = await  inquirer
 .prompt([
   {
     type: 'input',
@@ -23,12 +23,27 @@ let {title , description , tableOfContents , installation , usage , credits , li
       {
         type: 'input',
         name: 'usage',
-        message: 'Provide helpful instructions thats useful for your project',
+        message: 'Provide helpful usage information for your project',
       },
       {
         type: 'input',
         name: 'credits',
         message: 'Write all your collaborators Github names and  profiles links for your project',
+      },
+      {
+        type: 'input',
+        name: 'test',
+        message: 'Write about how to test your project with helpful instructions',
+      },
+      {
+        type: 'input',
+        name: 'profile',
+        message: 'What is your github username?',
+      },
+      {
+        type: 'input',
+        name: 'email',
+        message: 'What is your github email address?',
       },
       {
         type: 'list',
@@ -52,7 +67,10 @@ ${description}
 
 ## Table of Contents
 
-${tableOfContents}
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
 
 ## Installation
 
@@ -69,6 +87,18 @@ ${credits}
 ## License
 
 ${generateLicense(license)}
+
+## Test
+
+${test}
+
+## Questions
+
+If you would like to reach out to me then please send me an email @${email}
+
+Check out my Github Profile here!
+https://github.com/${profile}
+
 
   
 `
