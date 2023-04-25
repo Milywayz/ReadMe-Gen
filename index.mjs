@@ -82,13 +82,13 @@ ${installation}
 
 ${usage}
 
-## Contributing
-
-${contributing}
-
 ## License
 
 ${generateLicense(license)}
+
+## Contributing
+
+${contributing}
 
 ## Test
 
