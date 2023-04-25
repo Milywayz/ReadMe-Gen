@@ -1,6 +1,6 @@
 # a
 
-[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
+
 
 ## Description
 
@@ -25,7 +25,7 @@ a
 
 ## License
 
-
+ The current License for project is: THE UNLICENSE
 
 ## Contributing
 
@@ -40,7 +40,7 @@ a
 If you would like to reach out to me then please send me an email @a
 
 Check out my Github Profile here!
-https://github.com/aa
+https://github.com/a
 
 
   
