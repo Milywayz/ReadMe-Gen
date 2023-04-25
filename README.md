@@ -1,8 +1,8 @@
-# a
+# yo
 
 ## Description
 
-aa
+yo
 
 ## Table of Contents
 
@@ -10,34 +10,33 @@ aa
 - [Usage](#usage)
 - [Credits](#credits)
 - [License](#license)
-- [Test](#test)
-- [Questions](#questions)
 
 ## Installation
 
-a
+yo
 
 ## Usage
 
-a
+yo
 
 ## Credits
 
-a
+yo
 
 ## License
 
 
 
-## Tests
+## Test
 
-a
+yo
 
 ## Questions
 
-If you would like to reach out to me then please send me an email @jtjenks@gmail.com
+If you would like to reach out to me then please send me an email @yo
 
-https://github.com/Milywayz
+Check out my Github Profile here!
+https://github.com/yo
 
 
   
