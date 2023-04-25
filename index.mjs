@@ -71,6 +71,8 @@ ${description}
 - [Usage](#usage)
 - [Credits](#credits)
 - [License](#license)
+- [Test](#test)
+- [Questions](#questions)
 
 ## Installation
 
