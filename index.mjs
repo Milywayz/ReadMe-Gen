@@ -3,7 +3,7 @@ import fs from "fs/promises"
 
 
 
-let {title , description , installation , usage , credits , test , profile , email , license} = await  inquirer
+let {title , description , installation , usage , contributing , test , profile , email , license} = await  inquirer
 .prompt([
   {
     type: 'input',
@@ -27,8 +27,8 @@ let {title , description , installation , usage , credits , test , profile , ema
       },
       {
         type: 'input',
-        name: 'credits',
-        message: 'Write all your collaborators Github names and  profiles links for your project',
+        name: 'contributing',
+        message: 'Write about how people can contribute to your project',
       },
       {
         type: 'input',
@@ -82,9 +82,9 @@ ${installation}
 
 ${usage}
 
-## Credits
+## Contributing
 
-${credits}
+${contributing}
 
 ## License
 
