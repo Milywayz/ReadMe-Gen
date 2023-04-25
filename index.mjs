@@ -3,7 +3,7 @@ import fs from "fs/promises"
 
 
 
-let {title , description , tableOfContents , installation , usage , license} = await  inquirer
+let {title , description , tableOfContents , installation , usage , credits , license} = await  inquirer
 .prompt([
   {
     type: 'input',
@@ -23,7 +23,12 @@ let {title , description , tableOfContents , installation , usage , license} = a
       {
         type: 'input',
         name: 'usage',
-        message: 'Write about what usages is needed for your project',
+        message: 'Provide helpful instructions thats useful for your project',
+      },
+      {
+        type: 'input',
+        name: 'credits',
+        message: 'Write all your collaborators Github names and  profiles links for your project',
       },
       {
         type: 'list',
@@ -39,14 +44,30 @@ let {title , description , tableOfContents , installation , usage , license} = a
     
 
 
-let readmeTitle = `# Project Description
-${title}
-## Project Description
+let readmeTitle = `# ${title}
+
+## Description
+
 ${description}
+
 ## Table of Contents
+
 ${tableOfContents}
+
 ## Installation
+
 ${installation}
+
+## Usage
+
+${usage}
+
+## Credits
+
+${credits}
+
+## License
+
 
 ${generateLicense(license)}
 
