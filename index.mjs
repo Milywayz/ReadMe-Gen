@@ -61,6 +61,8 @@ let {title , description , installation , usage , contributing , test , profile 
 
 let readmeTitle = `# ${title}
 
+${generateLicense(license)}
+
 ## Description
 
 ${description}
