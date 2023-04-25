@@ -68,7 +68,6 @@ ${credits}
 
 ## License
 
-
 ${generateLicense(license)}
 
   
@@ -83,10 +82,16 @@ ${generateLicense(license)}
 
     if (license === "The UnLicense"){
 
-      return ""
-
+      return "[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)"
     }
+    if (license === "MIT License"){
 
+      return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
+    }
+    if (license === "Apache License 2.0"){
+
+      return "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
+    }
 
     return ""
   }
