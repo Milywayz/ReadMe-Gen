@@ -69,7 +69,7 @@ ${description}
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Credits](#credits)
+- [Contributing](#contributing)
 - [License](#license)
 - [Test](#test)
 - [Questions](#questions)
