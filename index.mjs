@@ -50,9 +50,7 @@ let {title , description , installation , usage , contributing , test , profile 
         name: 'license',
         message: 'What license do you need?',
         choices: ['The UnLicense', 'MIT License', 'Apache License 2.0'],
-        filter(val) {
-          return val.toLowerCase();
-        },
+        
       },
     ])
     
@@ -86,7 +84,7 @@ ${usage}
 
 ## License
 
-${generateLicense(license)} The current License for project is: ${license.toUpperCase()}
+The current License for project is: ${license.toUpperCase()} ${generateLicense(license)} 
 
 ## Contributing
 
@@ -100,11 +98,10 @@ ${test}
 
 If you would like to reach out to me then please send me an email @${email}
 
-Check out my Github Profile here!
+Github username: ${profile}
+If you want to check out my Github Profile then click the link down below!
 https://github.com/${profile}
 
-
-  
 `
 
 
@@ -113,7 +110,7 @@ https://github.com/${profile}
 
 
   function generateLicense(license){
-
+    console.log(license)
     if (license === "The UnLicense"){
 
       return "[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)"
@@ -128,6 +125,6 @@ https://github.com/${profile}
 
       return "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
     }
-
+   
     return ""
   }
