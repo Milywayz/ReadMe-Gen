@@ -85,7 +85,6 @@ ${usage}
 
 ## License
 
-${generateLicense(license)}
 The current License for project is: ${license.toUpperCase()}
 
 ## Contributing
