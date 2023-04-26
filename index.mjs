@@ -1,8 +1,9 @@
+// imports from package.json
 import inquirer from "inquirer";
 import fs from "fs/promises"
 
 
-
+// Node Questions and inputs
 let {title , description , installation , usage , contributing , test , profile , email , license} = await  inquirer
 .prompt([
   {
@@ -56,7 +57,7 @@ let {title , description , installation , usage , contributing , test , profile 
     
     
 
-
+// ReadMe Layout
 let readmeTitle = `# ${title}
 
 ${generateLicense(license)}
@@ -105,11 +106,11 @@ https://github.com/${profile}
 
 `
 
-
+// To put the selected inputs options into the readme
     fs.writeFile("README.md",readmeTitle)
   console.log(description)
 
-
+// License Badge generator depending on which License you chose
   function generateLicense(license){
     console.log(license)
     if (license === "The UnLicense"){
