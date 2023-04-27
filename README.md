@@ -21,7 +21,7 @@ VSCODE
 
 ## Usage
 
-Link for walkthrough https://www.google.com/
+Link for walkthrough https://watch.screencastify.com/v/QPGiTZF6aZmxTEzkJs17
 
 ## License
 
