@@ -3,6 +3,7 @@ import inquirer from "inquirer";
 import fs from "fs/promises"
 
 
+
 // Node Questions and inputs
 let {title , description , installation , usage , contributing , test , profile , email , license} = await  inquirer
 .prompt([
@@ -85,7 +86,8 @@ ${usage}
 
 ## License
 
-The current License for project is: ${license.toUpperCase()}
+${generateLicense(license)}
+The current License for project is: ${license.toUpperCase()} 
 
 ## Contributing
 

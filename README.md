@@ -25,6 +25,7 @@ Link for walkthrough https://watch.screencastify.com/v/QPGiTZF6aZmxTEzkJs17
 
 ## License
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 The current License for project is: MIT LICENSE
 
 ## Contributing
